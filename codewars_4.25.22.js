@@ -1,19 +1,26 @@
-        // NARCISSISTIC NUMBERS
-        function isNarcissistic(n) {
-                let arr =  n.toString().split('')  // convert num into an array of numbers
-                let digits = arr.length
-                let newArr = []
-        
-                for ( let i = 0; i < arr.length ; i++) {
-                        newArr.push ( arr[i] ** digits )
-                }
-        
-                if ( newArr.reduce( (acc, c) => acc + c, 0)  == n ){
-                        return true 
+        // SIMPLE FUN $193: MOMENT OF TIME IN SPACE
+function momentOfTimeInSpace(moment) {
+        let past = [ true,false,false]
+        let present = [false, true, false]
+        let future = [false, false,true]
+
+        let arr = moment.split('')
+        let time = 0 
+        let space = []
+
+        for ( let i = 0; i < arr.length; i++) {
+                if( arr[i] > 0 ) {
+                        time = time + Number( arr[i] )
                 } else {
-                        return false
+                        space.push(arr[i])
                 }
         }
-        console.log( isNarcissistic ( 153 ) )
-        // Ex: 153, where n = 3 (number of digits in 153)
-        // 13 + 53 + 33 = 153
+                if ( time < space.length ) {
+                        return past
+                } else if ( time > space.length ) {
+                        return future
+                } else {
+                        return present
+                }
+}
+console.log( momentOfTimeInSpace("01:00 pm") )
