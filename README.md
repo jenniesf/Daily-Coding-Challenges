@@ -1,6 +1,6 @@
-# Daily-Coding-Challenges
+# ⭐ Daily-Coding-Challenges
 
-I created this repository as a way to track my daily progress on Codewars.com and share my solutions with others.
+A repository filled with Codewar.com challenges. I created this as a way to track my daily progress and share my solutions with others.
 
 <strong>Tech used:</strong> 
 Javascript
@@ -11,3 +11,7 @@ Javascript
 - Focusing on writing clean and efficient code<br>
 - Understanding there are different ways to code/solve problems<br>
 - Taking initiative to improve and learn from other people's solutions<br>
+- Practical repetition <br>
+
+<strong>Codewars Stats:</strong> 
+Current level: 6 kyu
