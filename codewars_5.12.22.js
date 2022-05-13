@@ -1,4 +1,6 @@
-        // DONT GIVE ME FIVE
+        
+        // DONT GIVE ME FIVE - KYU 7
+        
 function dontGiveMeFive(start, end) {
         let arr = []
         for ( i = start ; i <= end ; i++) {
