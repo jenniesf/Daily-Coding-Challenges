@@ -12,4 +12,3 @@ function duplicates(arr){
         }
         return count  
 }
-console.log( duplicates( [1, 2, 2, 20, 6, 20, 2, 6, 2] ) )
